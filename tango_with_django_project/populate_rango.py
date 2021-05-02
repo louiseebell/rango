@@ -9,26 +9,26 @@ from rango.models import Category, Page
 
 def populate():
     python_pages = [
-        {'title': 'Official Python Tutorial', 'url': 'http://docs.python.org/3/tutorial/'},
-        {'title': 'How to Think like a Computer Scientist', 'url': 'http://www.greenteapress.com/thinkpython/'},
-        {'title': 'Learn Python in 10 Minutes', 'url': 'http://www.korokithakis.net/tutorials/python/'}
+        {'title': 'Official Python Tutorial', 'url': 'http://docs.python.org/3/tutorial/', 'views':27},
+        {'title': 'How to Think like a Computer Scientist', 'url': 'http://www.greenteapress.com/thinkpython/', 'views':84},
+        {'title': 'Learn Python in 10 Minutes', 'url': 'http://www.korokithakis.net/tutorials/python/', 'views':3722}
     ]
 
     django_pages = [
-        {'title': 'Official Django Tutorial', 'url': 'https://docs.djangoproject.com/en/2.1/intro/tutorial01/'},
-        {'title': 'Django Rocks', 'url': 'http://www.djangorocks.com/'},
-        {'title': 'How to Tango with Django', 'url': 'http://www.tangowithdjango.com/'}
+        {'title': 'Official Django Tutorial', 'url': 'https://docs.djangoproject.com/en/2.1/intro/tutorial01/', 'views':283},
+        {'title': 'Django Rocks', 'url': 'http://www.djangorocks.com/', 'views':337},
+        {'title': 'How to Tango with Django', 'url': 'http://www.tangowithdjango.com/', 'views':34}
     ]
 
     other_pages = [
-        {'title': 'Bottle', 'url': ' http://bottlepy.org/docs/dev/'},
-        {'title': 'Flask', 'url': 'http://flask.pocoo.org'}
+        {'title': 'Bottle', 'url': ' http://bottlepy.org/docs/dev/', 'views':23},
+        {'title': 'Flask', 'url': 'http://flask.pocoo.org', 'views':34}
     ]
 
     cats = {
-        'Python': {'pages': python_pages, 'views': 128, 'likes': 64},
-        'Django': {'pages': django_pages, 'views': 64, 'likes': 32},
-        'Other Frameworks': {'pages': other_pages, 'views': 32, 'likes': 16}
+        'Python': {'pages': python_pages, 'views': 389, 'likes': 64},
+        'Django': {'pages': django_pages, 'views': 99, 'likes': 32},
+        'Other Frameworks': {'pages': other_pages, 'views': 238, 'likes': 16}
     }
 
     for cat, cat_data in cats.items():
