@@ -24,7 +24,7 @@ SECRET_KEY = '3qqi&sv_l%of802cbb0xj_pap*o-a1^i3x443mjyqxhngl&*0w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sgoudham.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 # Application definition
 
@@ -124,3 +124,5 @@ MEDIA_ROOT = MEDIA_DIR
 # Login
 
 LOGIN_URL = 'rango:login'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = TrueLOGIN_URL = 'rango:login'
